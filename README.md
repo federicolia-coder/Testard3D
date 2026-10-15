@@ -139,6 +139,6 @@ La 0.6 è **gratuita**, anche per uso commerciale, ma non è open source: puoi u
 
 ## Chi lo fa
 
-Testard 3D è scritto da **TestardSoftware**, il reparto di programmazione di [TestardStudios](https://testardstudios.it), un collettivo di studenti nato a novembre 2025. Per domande, problemi o il piano per la tua azienda scrivici a [info@testardstudios.it](mailto:info@testardstudios.it) o dal [modulo contatti](https://software.testardstudios.it/contatti).
+Testard 3D è scritto da **TestardSoftware**, il reparto di programmazione di [TestardStudios](https://testardstudios.it), un collettivo di studenti nato a novembre 2025. Lo sviluppiamo con [Claude Code](https://claude.com/claude-code), l'assistente di programmazione di Anthropic: codice, test, interfaccia, trailer e questo README sono nati così. Per domande, problemi o il piano per la tua azienda scrivici a [info@testardstudios.it](mailto:info@testardstudios.it) o dal [modulo contatti](https://software.testardstudios.it/contatti).
 
 <sub>Testard 3D è un progetto indipendente, scritto da zero. Riprende il flusso di lavoro di 3ds Max e di Blender, ma non è affiliato né approvato da Autodesk o dalla Blender Foundation, e non contiene il loro codice. 3ds Max è un marchio di Autodesk, Inc.; Blender è un marchio della Blender Foundation.</sub>
