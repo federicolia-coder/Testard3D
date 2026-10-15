@@ -18,6 +18,8 @@
 
 Testard 3D è un programma 3D desktop che si installa e funziona sul tuo computer, senza account e senza connessione. Ha quattro viewport, il Command Panel e lo stack dei modificatori come in 3ds Max, e l'Edit Mode con vertici, spigoli e facce come in Blender. Dentro trovi modellazione, scultura, UV e texture, animazione con keyframe e render.
 
+> **Pensato per chi viene da 3ds Max.** Abbiamo studiato come funziona 3ds Max, anche sulla documentazione ufficiale di Autodesk, e abbiamo ricostruito da zero il suo modo di lavorare: quattro viewport, Command Panel, stack dei modificatori, Scene Explorer con ricerca. Se lo sai usare, sai già usare Testard 3D, a 2 € al mese invece di 2.000 € l'anno.
+
 Questa è la **versione 0.6, gratuita**. La puoi usare quanto vuoi, anche per lavoro. Le versioni nuove escono su [software.testardstudios.it](https://software.testardstudios.it) con un abbonamento da 2 € al mese, oppure 4 € al mese per tutta l'azienda.
 
 ---
