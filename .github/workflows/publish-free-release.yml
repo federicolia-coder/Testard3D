@@ -1,0 +1,44 @@
+# Publishes a free Testard 3D version: copies its installers from the private
+# build repository and attaches them to a release here.
+# Needs the secret PRIVATE_RELEASES_TOKEN: a fine-grained token with
+# "Contents: Read-only" on federicolia-coder/3dsMaxRemake.
+name: Publish free release
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Version tag to publish (e.g. v0.6.0)
+        required: true
+        default: v0.6.0
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download installers from the private repository
+        env:
+          GH_TOKEN: ${{ secrets.PRIVATE_RELEASES_TOKEN }}
+        run: |
+          mkdir dist
+          gh release download "${{ inputs.tag }}" --repo federicolia-coder/3dsMaxRemake --dir dist
+          cd dist
+          sha256sum Testard3D-* > SHA256SUMS.txt
+          ls -l
+
+      - name: Create the public release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          notes=".github/release-notes-${{ inputs.tag }}.md"
+          version="${{ inputs.tag }}"
+          gh release create "$version" dist/* \
+            --repo "${{ github.repository }}" \
+            --title "Testard 3D ${version#v} (gratuito)" \
+            --notes-file "$notes" \
+            --latest
